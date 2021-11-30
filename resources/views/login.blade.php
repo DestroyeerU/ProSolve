@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login - Vali Admin</title>
+    <title>Login</title>
   </head>
   <body>
     <section class="material-half-bg">
@@ -16,44 +16,44 @@
     </section>
     <section class="login-content">
       <div class="logo">
-        <h1>Vali</h1>
+        <h1>ProSolve</h1>
       </div>
       <div class="login-box">
         <form class="login-form" action="index.html">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Login</h3>
           <div class="form-group">
-            <label class="control-label">USERNAME</label>
+            <label class="control-label">Usuário</label>
             <input class="form-control" type="text" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
-            <label class="control-label">PASSWORD</label>
-            <input class="form-control" type="password" placeholder="Password">
+            <label class="control-label">Senha</label>
+            <input class="form-control" type="password" placeholder="Senha">
           </div>
           <div class="form-group">
             <div class="utility">
               <div class="animated-checkbox">
                 <label>
-                  <input type="checkbox"><span class="label-text">Stay Signed in</span>
+                  <input type="checkbox"><span class="label-text">Manter Conectado</span>
                 </label>
               </div>
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
+              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Esqueceu a senha?</a></p>
             </div>
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Entrar</button>
           </div>
         </form>
         <form class="forget-form" action="index.html">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Forgot Password ?</h3>
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Esqueceu a senha?</h3>
           <div class="form-group">
-            <label class="control-label">EMAIL</label>
+            <label class="control-label">Email</label>
             <input class="form-control" type="text" placeholder="Email">
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>RESET</button>
+            <button class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>Limpar</button>
           </div>
           <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Back to Login</a></p>
+            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Voltar </a></p>
           </div>
         </form>
       </div>
