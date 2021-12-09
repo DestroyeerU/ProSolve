@@ -52,9 +52,6 @@
           <div class="form-group btn-container">
             <button class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>Limpar</button>
           </div>
-          <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Voltar </a></p>
-          </div>
         </form>
       </div>
     </section>

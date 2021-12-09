@@ -22,12 +22,9 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body class="app sidebar-mini">
-   
+  <body class="app sidebar-mini" >
     <header class="app-header"><a class="app-header__logo" href="index.html">ProSolve</a>
-    
       <ul class="app-nav">
-
         <!--Notification Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
           <ul class="app-notification dropdown-menu dropdown-menu-right">
@@ -116,12 +113,16 @@
                   <input class="form-control" type="text" placeholder="Coloque seu Endereço">
                 </div>
                 <div class="form-group">
+                  <label class="control-label">Data</label>
+                  <input class="form-control" type="date" placeholder="Data">
+                </div>
+                <div class="form-group">
                   <label class="control-label">Descrição</label>
                   <textarea class="form-control" rows="4" placeholder="Descreva o Problema"></textarea>
                 </div>
-                <div class="form-group">
+                 <!-- <div class="form-group">
                   <label class="control-label">Foto do Problema</label>
-                  <input class="form-control" type="file">
+                  <input class="form-control" type="file">-->
                 </div>
               </form>
             </div>
