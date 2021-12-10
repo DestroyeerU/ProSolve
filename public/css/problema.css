@@ -8,6 +8,7 @@
   width: 100%;
   margin-left: 70px !important;
 }
+
 body{
-	  overflow: hidden; 
+    overflow-x: hidden;
 }
