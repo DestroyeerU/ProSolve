@@ -18,7 +18,7 @@ class CreateProblemasTable extends Migration
             $table->timestamps();
 			$table->string('titulo');
 			$table->string('endereco');
-			$table->string('descricao');
+			$table->string('descricao', 500);
 			$table->timestamp('data');
         });
     }
