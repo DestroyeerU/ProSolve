@@ -24,7 +24,7 @@
   </head>
   <body class="app sidebar-mini">
    
-    <header class="app-header"><a class="app-header__logo" href="index.html">ProSolve</a>
+    <header class="app-header"><a class="app-header__logo" href="{{ url('/') }}">ProSolve</a>
     
       <ul class="app-nav">
 
