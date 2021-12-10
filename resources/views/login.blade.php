@@ -19,17 +19,18 @@
         <h1>ProSolve</h1>
       </div>
       <div class="login-box">
-        <form class="login-form" action="index.html">
+        <form class="login-form" action="{{ route('login.load') }}" method="POST">
+          @csrf
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Login</h3>
           <div class="form-group">
             <label class="control-label">Usuário</label>
-            <input class="form-control" type="text" placeholder="Email" autofocus>
+            <input class="form-control" id="email" name="email" type="text" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
             <label class="control-label">Senha</label>
-            <input class="form-control" type="password" placeholder="Senha">
+            <input class="form-control" id="senha" name="senha" type="password" placeholder="Senha">
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <div class="utility">
               <div class="animated-checkbox">
                 <label>
@@ -38,7 +39,7 @@
               </div>
               <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Esqueceu a senha?</a></p>
             </div>
-          </div>
+          </div> -->
           <div class="form-group btn-container">
             <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Entrar</button>
           </div>

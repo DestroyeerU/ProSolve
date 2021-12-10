@@ -20,23 +20,28 @@
         <h1>ProSolve</h1>
       </div>
       <div class="login-box cadastro-box">
-        <form class="login-form" action="index.html">
+        <form class="login-form" action="{{ route('cadastro.load') }}" method="POST" >
+          @csrf
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>CADASTRO</h3>
           <div class="form-group">
             <label class="control-label">Nome</label>
-            <input class="form-control" type="text" placeholder="Nome" autofocus>
+            <input class="form-control" id="nome" name="nome" type="text" placeholder="Nome" autofocus>
           </div>
             <div class="form-group">
             <label class="control-label">Email</label>
-            <input class="form-control" type="text" placeholder="Email" autofocus>
+            <input class="form-control" id="email" name="email" type="text" placeholder="Email" autofocus>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Senha</label>
+            <input class="form-control" id="senha" name="senha" type="password" placeholder="Senha">
           </div>
           <div class="form-group">
             <label class="control-label">Data de Nascimento</label>
-            <input class="form-control" type="date" placeholder="Data">
+            <input class="form-control" id="data" name="data" type="date" placeholder="Data">
           </div>
             <div class="form-group">
             <label class="control-label">Telefone</label>
-            <input class="form-control" type="text" placeholder="Telefone">
+            <input class="form-control" id="tefelone" name="telefone" type="text" placeholder="Telefone">
           </div>
            <div class="form-group btn-container">
             <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Criar</button>
@@ -46,7 +51,7 @@
               <div class="animated-checkbox">
           </div>
           <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Voltar para o login</a></p>
+            <p class="semibold-text mb-0"><a href="{{ url('/login') }}"><i class="fa fa-angle-left fa-fw"></i> Voltar para o login</a></p>
           </div>
         </form>
       </div>

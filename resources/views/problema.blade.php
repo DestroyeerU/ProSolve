@@ -103,22 +103,27 @@
           <div class="tile">
             <h3 class="tile-title">Criar Postagem</h3>
             <div class="tile-body">
-              <form>
+              <form action="{{ route('problema.criar') }}" method="POST">
+                @csrf
                 <div class="form-group">
                   <label class="control-label">Título</label>
-                  <input class="form-control" type="text" placeholder="Título do Problema">
+                  <input class="form-control" id="titulo" name="titulo" type="text" placeholder="Título do Problema">
                 </div>
                 <div class="form-group">
                   <label class="control-label">Endereço</label>
-                  <input class="form-control" type="text" placeholder="Coloque seu Endereço">
+                  <input class="form-control" id="endereco" name="endereco" type="text" placeholder="Coloque seu Endereço">
                 </div>
                 <div class="form-group">
                   <label class="control-label">Data</label>
-                  <input class="form-control" type="date" placeholder="Data">
+                  <input class="form-control" id="data" name="data" type="date" placeholder="Data">
                 </div>
                 <div class="form-group">
                   <label class="control-label">Descrição</label>
-                  <textarea class="form-control" rows="4" placeholder="Descreva o Problema"></textarea>
+                  <textarea class="form-control" id="descricao" name="descricao" rows="4" placeholder="Descreva o Problema"></textarea>
+                </div>
+                <div class="tile-footer">
+                  <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;
+                  <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
                 </div>
                  <!-- <div class="form-group">
                   <label class="control-label">Foto do Problema</label>
@@ -126,9 +131,7 @@
                 </div>
               </form>
             </div>
-            <div class="tile-footer">
-              <button class="btn btn-primary" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
-            </div>
+            
           </div>
         </div>
             </div>

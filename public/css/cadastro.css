@@ -1,6 +1,6 @@
 .cadastro-box{
-	height: 480px !important;
+	height: 590px !important;
 }
 body{  
-	overflow: hidden; 
+	overflow-x: hidden; 
 }
