@@ -27,7 +27,6 @@
   <body class="app sidebar-mini">
 
     <header class="app-header"><a class="app-header__logo" href="{{ url('/') }}">ProSolve</a>
-
       <ul class="app-nav">
 
         <li class="dropdown item-btn-criar">
@@ -100,62 +99,26 @@
         </div>
         <div class="Logout">
           <div class="tab-content">
-            <div class="tab-pane active" id="user-timeline">
-              <div class="timeline-post">
-                <div class="post-media"><a href="#">
-                  <div class="content">
-                    <h5><a href="#">John Doe</a></h5>
-                    <p class="text-muted"><small>2 January at 9:30 - Rua joaquim amaral</small></p>
+              @foreach  ( $problemas as $problema )
+                <div class="timeline-post">
+                  <div class="post-media">
+                    <div class="content">
+                      <h5>{{ $problema->usuario }}</h5>
+                      <p class="text-muted"><small>{{ $problema->data }} - {{ $problema->endereco }}</small></p>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <h3>{{ $problema->titulo }}</h3>
+                    <p>{{ $problema->descricao }}</p>
                   </div>
                 </div>
-                <div class="post-content">
-                     <h3>Titulo do Problema</h3>
-
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                </div>
-
-              </div>
-              <div class="timeline-post">
-                <div class="post-media"><a href="#">
-                  <div class="content">
-                    <h5><a href="#">John Doe</a></h5>
-                    <p class="text-muted"><small>2 January at 9:30 - Rua joaquim amaral</small></p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <h3>Titulo do Problema</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="user-settings">
-              <div class="tile user-settings">
-                <h4 class="line-head">Settings</h4>
-                <form>
-                   <div class="content">
-                    <h5><a href="#">John Doe</a></h5>
-                    <p class="text-muted"><small>2 January at 9:30 - Rua joaquim amaral</small></p>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline-post">
-                <div class="post-media"><a href="#">
-                  <div class="content">
-                    <h5><a href="#">John Doe</a></h5>
-                    <p class="text-muted"><small>2 January at 9:30 - Rua joaquim amaral</small></p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <h3>Titulo do Problema</h3>
-                  <p>m linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável</p>
-                </div>
-              </div>
-            </div>
-
+              @endforeach
           </div>
         </div>
       </div>
+
+
+
     </main>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.3.1.min.js"></script>
