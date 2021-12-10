@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="app sidebar-mini" >
-    <header class="app-header"><a class="app-header__logo" href="index.html">ProSolve</a>
+    <header class="app-header"><a class="app-header__logo" href="{{ url('/') }}">ProSolve</a>
       <ul class="app-nav">
         <!--Notification Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
@@ -134,50 +134,6 @@
 
           </div>
         </div>
-            </div>
-            <div class="tab-pane fade" id="user-settings">
-              <div class="tile user-settings">
-                <h4 class="line-head">Settings</h4>
-                <form>
-                  <div class="row mb-4">
-                    <div class="col-md-4">
-                      <label>First Name</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="col-md-4">
-                      <label>Last Name</label>
-                      <input class="form-control" type="text">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8 mb-4">
-                      <label>Email</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-8 mb-4">
-                      <label>Mobile No</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-8 mb-4">
-                      <label>Office Phone</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-8 mb-4">
-                      <label>Home Phone</label>
-                      <input class="form-control" type="text">
-                    </div>
-                  </div>
-                  <div class="row mb-10">
-                    <div class="col-md-12">
-                      <button class="btn btn-primary" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i> Salvar </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </div>
