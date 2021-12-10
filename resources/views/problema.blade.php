@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  
+
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="@pratikborsadiya">
     <meta property="twitter:creator" content="@pratikborsadiya">
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-     <link rel="stylesheet" type="text/css" href="css/problema.css">
+    <link rel="stylesheet" type="text/css" href="css/problema.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -70,14 +70,14 @@
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Sair </a></li>
-           
+
           </ul>
         </li>
       </ul>
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
- 
+
     <main class="app-content">
       <div class="row user">
         <div class="col-md-12">
@@ -85,13 +85,13 @@
         </div>
         <div class="col-md-3">
           <div class="tile p-0">
-            
-              
+
+
           </div>
         </div>
         <div class="Logout">
           <div class="tab-content">
-           
+
             <div class="tab-pane fade" id="user-settings">
               <div class="tile user-settings">
                 <h4 class="line-head">Settings</h4>
@@ -131,7 +131,7 @@
                 </div>
               </form>
             </div>
-            
+
           </div>
         </div>
             </div>

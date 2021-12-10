@@ -1,0 +1,13 @@
+.item-btn-criar {
+    display: flex;
+    margin-right: 40px;
+}
+
+.btn-criar-publicacao {
+    margin: auto 0;
+    background-color: var(--white);
+}
+
+.btn-criar-publicacao:hover {
+    transform: none !important;
+}

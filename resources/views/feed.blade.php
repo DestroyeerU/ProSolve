@@ -21,12 +21,18 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/feed.css">
   </head>
   <body class="app sidebar-mini">
-   
+
     <header class="app-header"><a class="app-header__logo" href="{{ url('/') }}">ProSolve</a>
-    
+
       <ul class="app-nav">
+
+        <li class="dropdown item-btn-criar">
+            <a href="{{ url('/problema') }}" class="btn btn-criar-publicacao">Criar publicação</a>
+        </li>
 
         <!--Notification Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
@@ -69,20 +75,18 @@
             <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
           </ul>
         </li>
+
         <!-- User Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Criar Post</a></li>
-            
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Sair </a></li>
-           
+            <li><a class="dropdown-item" href="{{ url('/login') }}"><i class="fa fa-sign-out fa-lg"></i> Sair </a></li>
           </ul>
         </li>
       </ul>
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
- 
+
     <main class="app-content">
       <div class="row user">
         <div class="col-md-12">
@@ -90,8 +94,8 @@
         </div>
         <div class="col-md-3">
           <div class="tile p-0">
-            
-              
+
+
           </div>
         </div>
         <div class="Logout">
@@ -106,11 +110,11 @@
                 </div>
                 <div class="post-content">
                      <h3>Titulo do Problema</h3>
-                    
+
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 </div>
-                
+
               </div>
               <div class="timeline-post">
                 <div class="post-media"><a href="#">
@@ -148,7 +152,7 @@
                 </div>
               </div>
             </div>
-           
+
           </div>
         </div>
       </div>

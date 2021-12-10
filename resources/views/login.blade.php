@@ -30,16 +30,6 @@
             <label class="control-label">Senha</label>
             <input class="form-control" id="senha" name="senha" type="password" placeholder="Senha">
           </div>
-          <!-- <div class="form-group">
-            <div class="utility">
-              <div class="animated-checkbox">
-                <label>
-                  <input type="checkbox"><span class="label-text">Manter Conectado</span>
-                </label>
-              </div>
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Esqueceu a senha?</a></p>
-            </div>
-          </div> -->
           <div class="form-group btn-container">
             <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Entrar</button>
           </div>
