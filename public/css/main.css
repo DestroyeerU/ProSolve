@@ -16384,6 +16384,21 @@ be a descendant of the grid when it is being dragged.
           justify-content: center;
   min-height: 100vh;
 }
+form{
+  animation: fade;
+  animation-duration: 1s ;
+}
+@keyframes fade {
+  from{
+    opacity: 0;
+    transform: scale(0.9);
+  } 
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+}
 
 .login-content .logo {
   margin-bottom: 40px;

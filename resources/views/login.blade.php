@@ -40,7 +40,7 @@
           </div>
 
           <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="{{ url('/cadastro') }}">Criar Cadastro <i class="fa fa-angle-right fa-fw"></i> </a></p>
+            <link class="semibold-text mb-0"><a href="{{ url('/cadastro') }}">Criar Cadastro <i class="fa fa-angle-right fa-fw"></i> </a></link>
           </div>
         </form>
       </div>
