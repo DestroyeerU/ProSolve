@@ -1,3 +1,13 @@
 body{
     overflow-x: hidden;
 }
+
+input[type="file"]{
+   display: none;
+}
+
+#anexar-text{
+    padding: 0.7rem 0.5rem;
+    color: #009688;
+    cursor: pointer; 
+}
