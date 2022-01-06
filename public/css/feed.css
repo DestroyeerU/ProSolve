@@ -11,3 +11,8 @@
 .btn-criar-publicacao:hover {
     transform: none !important;
 }
+#delet{
+	position: absolute;
+	 text-align:right;
+	 width: 680px;
+	 display: inline-block;
