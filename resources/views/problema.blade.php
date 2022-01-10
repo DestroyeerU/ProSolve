@@ -120,6 +120,7 @@
                   <label class="control-label">Descrição</label>
                   <textarea class="form-control" id="descricao" name="descricao" rows="4" placeholder="Descreva o Problema"></textarea>
                 </div>
+<<<<<<< HEAD
               
                 <div>
                  <label for="file">Imagens do Problema</label>
@@ -131,6 +132,19 @@
                   <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
                 </div>
                 </div>
+=======
+
+      
+                <div class="form-group">
+                  <label for="arquivo" class="control-label" id="anexar-text" >Anexar fotos</label>
+                  <input class="form-control" type="file" id="arquivo" name="arquivo" accept="image/*" multiple>
+
+                </div>
+
+                <div class="tile-footer">
+                  <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;
+                  <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+>>>>>>> c01f2251d6963d663a0432f772367b2d40c8c64d
               </form>
             </div>
 
