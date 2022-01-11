@@ -11,8 +11,19 @@
 .btn-criar-publicacao:hover {
     transform: none !important;
 }
-#delet{
+#concluido{
 	position: absolute;
 	 text-align:right;
 	 width: 680px;
 	 display: inline-block;
+	}
+.btn-concluido {
+    margin: auto 0;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-concluido:hover {
+    transform: none !important;
+      color: var(--white);
+}

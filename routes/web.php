@@ -39,5 +39,16 @@ Route::post('/cadastro/load', function (Request $req) {
     return redirect()->route('feed', []);
 })->name('cadastro.load');
 
+Route::get('/problemaDetalhes', function () {
+    $problema = (object)array();
+    $problema->data = "10/01/2022";
+    $problema->endereco = "Rua Ronaldinho";
+    $problema->titulo = "Buraco";
+    $problema->descricao = "eee";
+
+
+    return view ('problemaDetalhes', ['problema' => $problema]);
+})->name('problema.detalhes');
+
 Route::get('/problema', [ProblemasController::class, 'create'])->name('problema');
 Route::post('/problema/criar', [ProblemasController::class, 'store'])->name('problema.criar');
