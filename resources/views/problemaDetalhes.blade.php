@@ -13,7 +13,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Feed</title>
+    <title>Notificações</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,27 +31,7 @@
       <ul class="app-nav">
 
         <li class="dropdown item-btn-criar">
-            <a href="{{ url('/problema') }}" class="btn btn-criar-publicacao">Criar publicação</a>
-        </li>
-
-        <!--Notification Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-          <ul class="app-notification dropdown-menu dropdown-menu-right">
-            <div class="app-notification__content">
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message"> Seu problema foi resolvido</p>
-                    <p class="app-notification__meta">2 de janeiro</p>
-                  </div></a></li>
-              <div class="app-notification__content">
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Sua publicação foi postada</p>
-                      <p class="app-notification__meta">5 janeiro</p>
-                    </div></a></li>
-              </div>
-            </div>
-          </ul>
+            <a href="{{ url('/') }}" class="btn btn-criar-publicacao">Voltar</a>
         </li>
 
         <!-- User Menu-->
@@ -78,12 +58,11 @@
         </div>
         <div class="Logout">
           <div class="tab-content">
-              @foreach  ( $problemas as $problema )
+          
                 <div class="timeline-post">
                   <div class="post-media">
                     <div class="content">
                       <h5>Usuário Teste</h5>
-                     <div id="concluido"><button class="btn btn-concluido">Marcar Concluido</button></div>
                       <p class="text-muted"><small>{{ $problema->data }} - {{ $problema->endereco }}</small></p>
                     </div>
                   </div>
@@ -96,7 +75,7 @@
                     <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
                   </div>
                 </div>
-              @endforeach
+             
           </div>
         </div>
       </div> 

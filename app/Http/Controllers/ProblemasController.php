@@ -10,8 +10,8 @@ class ProblemasController extends Controller {
         return view('problema');
     }
 
-    public function store(Request $req) {
-        $problema = Problema::create($req->all());
+    public function store(Request $request) {
+        $problema = Problema::create($request->all());
 
         return redirect()->route('feed', []);
     }

@@ -102,7 +102,7 @@
           <div class="tile">
             <h3 class="tile-title">Criar Postagem</h3>
             <div class="tile-body">
-              <form action="{{ route('problema.criar') }}" method="POST">
+              <form action="{{ route('problema.criar') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                   <label class="control-label">Título</label>
@@ -120,6 +120,9 @@
                   <label class="control-label">Descrição</label>
                   <textarea class="form-control" id="descricao" name="descricao" rows="4" placeholder="Descreva o Problema"></textarea>
                 </div>
+
+
+      
                 <div class="form-group">
                   <label for="arquivo" class="control-label" id="anexar-text" >Anexar fotos</label>
                   <input class="form-control input-imagens" type="file" id="arquivo" name="arquivo" accept="image/*" onchange="previewImagens()" multiple>
@@ -134,6 +137,7 @@
                 <div class="tile-footer">
                   <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;
                   <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+
               </form>
             </div>
 
