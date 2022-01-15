@@ -120,14 +120,17 @@
                   <label class="control-label">Descrição</label>
                   <textarea class="form-control" id="descricao" name="descricao" rows="4" placeholder="Descreva o Problema"></textarea>
                 </div>
-
-      
                 <div class="form-group">
                   <label for="arquivo" class="control-label" id="anexar-text" >Anexar fotos</label>
-                  <input class="form-control" type="file" id="arquivo" name="arquivo" accept="image/*" multiple>
-
+                  <input class="form-control input-imagens" type="file" id="arquivo" name="arquivo" accept="image/*" onchange="previewImagens()" multiple>
+                  <ul class="imagens-lista"></ul>
+                  <div class="group-arquivo">
+                    <div class="wrapper-arquivo"> 
+                      <img src="https://cdn-icons-png.flaticon.com/512/2258/2258843.png" alt="" class="icon-arquivo">
+                      <img src="">
+                    </div>
+                  </div>
                 </div>
-
                 <div class="tile-footer">
                   <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;
                   <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
@@ -140,6 +143,7 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript" src="{{ URL::asset('js/imagensScript.js') }}"></script>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

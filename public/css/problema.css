@@ -11,3 +11,27 @@ input[type="file"]{
     color: #009688;
     cursor: pointer; 
 }
+
+.group-arquivo{
+    display: flex;
+    align-items: start;
+}
+.wrapper-arquivo{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    box-shadow: .1rem .1rem 0.3rem rgba(0, 0, 0, .4) ;
+    
+}
+
+.icon-arquivo{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;;
+    opacity: 0.8; 
+}
+
+
