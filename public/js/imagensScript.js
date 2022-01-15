@@ -9,10 +9,15 @@ function previewImagens(){
 
         const li =` 
             <li>
-                <p>${file.name}</p>
-                <span>${tamanhoMB.toFixed(2)} MB</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/2258/2258843.png" alt="" class="icon-arquivo">
+                <div id="elementos">
+                    <p>${file.name}</p>
+                    <span>${tamanhoMB.toFixed(2)} MB</span>
+                </div>
+
             </li>`;
         listaHTML += li; 
+
     }
     listaRef.innerHTML = listaHTML;
 

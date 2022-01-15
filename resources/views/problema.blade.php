@@ -19,6 +19,7 @@
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/problema.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -124,16 +125,11 @@
 
       
                 <div class="form-group">
-                  <label for="arquivo" class="control-label" id="anexar-text" >Anexar fotos</label>
+                  <label for="arquivo" class="control-label" id="anexar-text" >Anexar fotos<i class="fas fa-upload"></i></label>
                   <input class="form-control input-imagens" type="file" id="arquivo" name="arquivo" accept="image/*" onchange="previewImagens()" multiple>
                   <ul class="imagens-lista"></ul>
-                  <div class="group-arquivo">
-                    <div class="wrapper-arquivo"> 
-                      <img src="https://cdn-icons-png.flaticon.com/512/2258/2258843.png" alt="" class="icon-arquivo">
-                      <img src="">
-                    </div>
-                  </div>
                 </div>
+
                 <div class="tile-footer">
                   <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;
                   <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
