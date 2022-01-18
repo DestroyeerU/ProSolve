@@ -6,48 +6,61 @@ input[type="file"]{
    display: none;
 }
 
-#anexar-text{
-    padding: 0.7rem 0.5rem;
-    color: #009688;
-    cursor: pointer; 
+#anexar-text {
+    padding: 8px 12px;
+    cursor: pointer;
+
+    color: white;
+    background: #009688;
+    border-radius: 3px;
+}
+
+#anexar-text i {
+    margin-left: 5px;
 }
 
 .icon-arquivo{
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     width: 1rem;
     height: 1.1rem;;
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .form-group .imagens-lista{
-    list-style: none;
+    padding: 0;
     margin-bottom: 20px;
+
+    list-style: none;
 }
+
 .form-group .imagens-lista p{
     margin: 0;
-    color: white;
+    color: #212529;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
 }
+
 .form-group .imagens-lista span{
     margin: 0;
-    color: white;
+    color: #009688;
     font-size: .8rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .form-group .imagens-lista li{
     padding:10px;
     margin-bottom: 20px;
     display: flex;
-    
+
     align-items: center;
     border-radius: 2px;
-    background-color: #6c757d;
+
+    border: 2px solid #ced4da;
 }
 .icon-arquivo{
-    margin-left: 20px;
+    margin-left: 10px;
 }
+
 div #elementos{
-    margin-left: 20px;;
+    margin-left: 10px;
 }

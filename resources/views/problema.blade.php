@@ -123,9 +123,9 @@
                 </div>
 
 
-      
+
                 <div class="form-group">
-                  <label for="arquivo" class="control-label" id="anexar-text" >Anexar fotos<i class="fas fa-upload"></i></label>
+                  <label for="arquivo" class="control-label" id="anexar-text">Anexar fotos <i class="fa fa-upload"></i></label>
                   <input class="form-control input-imagens" type="file" id="arquivo" name="arquivo" accept="image/*" onchange="previewImagens()" multiple>
                   <ul class="imagens-lista"></ul>
                 </div>
@@ -133,7 +133,6 @@
                 <div class="tile-footer">
                   <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Postar</button>&nbsp;&nbsp;&nbsp;
                   <a class="btn btn-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
-
               </form>
             </div>
 

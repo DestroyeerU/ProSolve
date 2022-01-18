@@ -7,7 +7,9 @@ function previewImagens(){
         const file = inputRef.files[i];
         const tamanhoMB = file.size/1048576;
 
-        const li =` 
+        // <img src="/upload.svg" alt="" class="icon-arquivo">
+
+        const li =`
             <li>
                 <img src="https://cdn-icons-png.flaticon.com/512/2258/2258843.png" alt="" class="icon-arquivo">
                 <div id="elementos">
@@ -16,7 +18,7 @@ function previewImagens(){
                 </div>
 
             </li>`;
-        listaHTML += li; 
+        listaHTML += li;
 
     }
     listaRef.innerHTML = listaHTML;
