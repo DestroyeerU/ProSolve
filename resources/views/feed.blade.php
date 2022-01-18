@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
@@ -38,13 +38,13 @@
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
           <ul class="app-notification dropdown-menu dropdown-menu-right">
             <div class="app-notification__content">
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+              <li><a class="app-notification__item" href="{{ url('/problemaDetalhes') }}"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
                   <div>
-                    <p class="app-notification__message"> Seu problema foi resolvido</p>
+                    <p class="app-notification__message">Seu problema foi resolvido</p>
                     <p class="app-notification__meta">2 de janeiro</p>
                   </div></a></li>
               <div class="app-notification__content">
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                <li><a class="app-notification__item" href="{{ url('/problemaDetalhes') }}"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
                     <div>
                       <p class="app-notification__message">Sua publicação foi postada</p>
                       <p class="app-notification__meta">5 janeiro</p>
@@ -90,7 +90,7 @@
                   <div class="post-content">
                     <h3>{{ $problema->titulo }}</h3>
                     <p>{{ $problema->descricao }}</p>
-                    
+
                     <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
                     <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
                     <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
@@ -99,7 +99,7 @@
               @endforeach
           </div>
         </div>
-      </div> 
+      </div>
     </main>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.3.1.min.js"></script>
