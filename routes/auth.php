@@ -9,12 +9,17 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
-Route::get('/register', [RegisteredUserController::class, 'create'])
+use App\Http\Controllers\ProblemasController;
+use \App\Models\User;
+use \App\Models\Problema;
+
+Route::get('/cadastro', [RegisteredUserController::class, 'create'])
                 ->middleware('guest')
-                ->name('register');
+                ->name('cadastro');
 
-Route::post('/register', [RegisteredUserController::class, 'store'])
+Route::post('/cadastro', [RegisteredUserController::class, 'store'])
                 ->middleware('guest');
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])

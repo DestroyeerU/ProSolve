@@ -53,8 +53,4 @@ Route::get('/problemaDetalhes', function () {
 Route::get('/problema', [ProblemasController::class, 'create'])->name('problema');
 Route::post('/problema/criar', [ProblemasController::class, 'store'])->name('problema.criar');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 require __DIR__.'/auth.php';

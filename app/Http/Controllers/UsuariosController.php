@@ -11,9 +11,9 @@ class UsuariosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index() {
+
+        
     }
 
     /**
@@ -21,8 +21,8 @@ class UsuariosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
+
         return view('cadastro');
     }
 
@@ -32,8 +32,8 @@ class UsuariosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, User $user)
-    {
+    public function store(Request $request, User $user) {
+
         /* $user->nome = $request->nome;
         $user->email = $request->email;
         $user->senha = $request->senha;
