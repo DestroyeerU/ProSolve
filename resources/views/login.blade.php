@@ -19,7 +19,7 @@
         <h1>ProSolve</h1>
       </div>
       <div class="login-box">
-        <form class="login-form" action="{{ route('login.load') }}" method="POST">
+        <form class="login-form" action="{{ url('/login') }}" method="POST">
           @csrf
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Login</h3>
           <div class="form-group">
