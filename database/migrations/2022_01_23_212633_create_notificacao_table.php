@@ -18,7 +18,7 @@ class CreateNotificacaoTable extends Migration
             $table->foreign('usuario_destino')->references('id')->on('usuarios');
             $table->foreign('publicacao')->references('id')->on('problemas');
             $table->string('mensagem');
-            $table->timestamps();
+            $table->timestamps('data');
         });
     }
 
