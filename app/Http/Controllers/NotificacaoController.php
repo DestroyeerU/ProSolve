@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class NotificacaoController extends Controller
 {
-    public function create() {
+    /* public function create() {
         return view('problema');
     }
 
@@ -14,5 +14,5 @@ class NotificacaoController extends Controller
         $notificacao = Notificacao::create($request->all());
 
         return redirect()->route('feed', []);
-    }
+    } */
 }

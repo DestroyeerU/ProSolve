@@ -10,9 +10,11 @@ class Notificacao extends Model
     use HasFactory;
 
     protected $fillable = [
-        'usuario_destino',
-        'publicacao',
+        // 'usuario_destino_id',
+        'problema_id',
         'mensagem',
         'data',
     ];
+
+    protected $table = 'notificacao';
 }

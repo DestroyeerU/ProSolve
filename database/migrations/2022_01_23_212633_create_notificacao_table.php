@@ -15,10 +15,14 @@ class CreateNotificacaoTable extends Migration
     {
         Schema::create('notificacao', function (Blueprint $table) {
             $table->id();
-            $table->foreign('usuario_destino')->references('id')->on('usuarios');
-            $table->foreign('publicacao')->references('id')->on('problemas');
+            // $table->unsignedBigInteger('usuario_destino_id');
+            $table->unsignedBigInteger('problema_id');
             $table->string('mensagem');
-            $table->timestamps('data');
+            $table->timestamp('data')->useCurrent();
+            $table->timestamps();
+
+            /* $table->foreign('usuario_destino_id')->references('id')->on('usuarios'); */
+            $table->foreign('problema_id')->references('id')->on('problemas');
         });
     }
 

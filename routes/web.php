@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\ProblemasController;
 use \App\Models\User;
 use \App\Models\Problema;
+use \App\Models\Notificacao;
 
 
 Route::get('/', function () {
     $problemas = Problema::all();
+    $notificacoes = Notificacao::all();
 
-    return view('feed', ['problemas' => $problemas]);
+    return view('feed', ['problemas' => $problemas, 'notificacoes' => $notificacoes]);
 })->name('feed');
 
 Route::post('/login/load', function (Request $req) {
@@ -31,14 +33,9 @@ Route::post('/cadastro/load', function (Request $req) {
     return redirect()->route('feed', []);
 })->name('cadastro.load');
 
-Route::get('/problemaDetalhes', function () {
-    $problema = (object)array();
-    $problema->data = "10/01/2022";
-    $problema->endereco = "Rua Ronaldinho";
-    $problema->titulo = "Buraco";
-    $problema->descricao = "Descrição Massa";
-
-
+Route::get('/problemaDetalhes/{id}', function ($id) {
+    $problema = Problema::find($id);
+    
     return view ('problemaDetalhes', ['problema' => $problema]);
 })->name('problema.detalhes');
 
