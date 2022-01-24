@@ -97,7 +97,7 @@
 
 
                 <div class="form-group">
-                  <label for="arquivo" class="control-label" id="anexar-text">Anexar fotos <i class="fa fa-upload"></i></label>
+                  <label for="arquivos" class="control-label" id="anexar-text">Anexar fotos <i class="fa fa-upload"></i></label>
                   <input class="form-control input-imagens" type="file" id="arquivos" name="arquivos" accept="image/*" onchange="previewImagens()" multiple>
                   <ul class="imagens-lista"></ul>
                 </div>

@@ -78,6 +78,9 @@
 
           </div>
         </div>
+
+        <img src="{{ url('problemas/foto01.png') }}"/>
+
         <div class="Logout">
           <div class="tab-content">
               @foreach  ( $problemas as $problema )
@@ -95,9 +98,9 @@
                     <h3>{{ $problema->titulo }}</h3>
                     <p>{{ $problema->descricao }}</p>
 
-                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
-                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
-                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
+                    <img src="{{ url('problemas/foto01.png') }}"/>
+                    <!-- <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
+                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/> -->
                   </div>
                 </div>
               @endforeach

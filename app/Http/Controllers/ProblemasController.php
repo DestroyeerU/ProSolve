@@ -25,7 +25,27 @@ class ProblemasController extends Controller {
     }
 
     public function store(Request $request) {
-        return $request->post('arquivos');
+        if (!$request->hasFile('arquivos') || !$request->file('arquivos')->isValid()) {
+            return redirect()
+                ->back()
+                ->with('error', 'Falha ao fazer upload')
+                ->withInput();
+        }
+
+        $nome = uniqid(date('HisYmd'));
+        $extensao = $request->arquivos->extension();
+        $nomeArquivo = "foto01.png";
+        // $nomeArquivo = "{$nome}.{$extensao}";
+        $upload = $request->arquivos->storeAs('problemas', $nomeArquivo);
+
+        if ( !$upload )
+            return redirect()
+                ->back()
+                ->with('error', 'Falha ao fazer upload')
+                ->withInput();
+
+        return $upload;
+
 
         // $problema = Problema::create($request->all());
         // $notificacao_data = array(
