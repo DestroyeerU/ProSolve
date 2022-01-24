@@ -9,12 +9,6 @@ use \App\Models\Problema;
 use \App\Models\Notificacao;
 
 
-Route::get('/', function () {
-    $problemas = Problema::all();
-    $notificacoes = Notificacao::all();
-
-    return view('feed', ['problemas' => $problemas, 'notificacoes' => $notificacoes]);
-})->name('feed');
 
 Route::post('/login/load', function (Request $req) {
     $email = $req->post('email');
@@ -33,12 +27,8 @@ Route::post('/cadastro/load', function (Request $req) {
     return redirect()->route('feed', []);
 })->name('cadastro.load');
 
-Route::get('/problemaDetalhes/{id}', function ($id) {
-    $problema = Problema::find($id);
-    
-    return view ('problemaDetalhes', ['problema' => $problema]);
-})->name('problema.detalhes');
-
+Route::get('/', [ProblemasController::class, 'index'])->name('feed');
+Route::get('/problemaDetalhes/{id}',  [ProblemasController::class, 'show'])->name('problema.detalhes');
 Route::get('/problema', [ProblemasController::class, 'create'])->name('problema');
 Route::post('/problema/criar', [ProblemasController::class, 'store'])->name('problema.criar');
 
