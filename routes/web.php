@@ -8,8 +8,6 @@ use \App\Models\User;
 use \App\Models\Problema;
 use \App\Models\Notificacao;
 
-
-
 Route::post('/login/load', function (Request $req) {
     $email = $req->post('email');
     $senha = $req->post('senha');

@@ -19,7 +19,6 @@
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/problema.css">
-    <link rel="stylesheet" type="text/css" href="/css/all.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -99,7 +98,7 @@
 
                 <div class="form-group">
                   <label for="arquivo" class="control-label" id="anexar-text">Anexar fotos <i class="fa fa-upload"></i></label>
-                  <input class="form-control input-imagens" type="file" id="arquivo" name="arquivo" accept="image/*" onchange="previewImagens()" multiple>
+                  <input class="form-control input-imagens" type="file" id="arquivos" name="arquivos" accept="image/*" onchange="previewImagens()" multiple>
                   <ul class="imagens-lista"></ul>
                 </div>
 
