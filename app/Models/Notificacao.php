@@ -16,5 +16,5 @@ class Notificacao extends Model
         'data',
     ];
 
-    protected $table = 'notificacao';
+    protected $table = 'notificacoes';
 }
