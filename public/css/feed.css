@@ -27,3 +27,15 @@
     transform: none !important;
       color: var(--white);
 }
+
+.nav-notificacao__bola {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background: var(--danger);
+}
