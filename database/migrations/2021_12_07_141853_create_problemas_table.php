@@ -20,7 +20,12 @@ class CreateProblemasTable extends Migration
 			$table->string('endereco');
 			$table->string('descricao', 500);
 			$table->timestamp('data');
+            $table->boolean('concluido')->default(0);
         });
+
+        // Schema::table('problemas', function (Blueprint $table) {
+        //     $table->boolean('concluido');
+        // });
     }
 
     /**

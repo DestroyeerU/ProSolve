@@ -34,4 +34,10 @@ class ProblemasController extends Controller {
 
         return redirect()->route('feed', []);
     }
+
+    // public function concluir($id) {
+    //     $problema = Problema::find($id);
+
+    //     return 
+    // }
 }

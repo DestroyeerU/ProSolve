@@ -14,5 +14,6 @@ class Problema extends Model
         'endereco',
         'data',
         'descricao',
+        'concluido',
     ];
 }

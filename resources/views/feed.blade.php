@@ -79,7 +79,7 @@
                   <div class="post-media">
                     <div class="content">
                       <h5>Usuário Teste</h5>
-                     <div id="concluido"><button class="btn btn-concluido">Marcar Concluido</button></div>
+                     <div id="concluido"><button class="btn btn-concluido"><a href="{{ url('/problema/concluir/' . $problema->id) }}">Marcar Concluido</a></button></div>
                       <p class="text-muted"><small>{{ $problema->data }} - {{ $problema->endereco }}</small></p>
                     </div>
                   </div>

@@ -32,4 +32,6 @@ Route::get('/problemaDetalhes/{id}',  [ProblemasController::class, 'show'])->nam
 Route::get('/problema', [ProblemasController::class, 'create'])->name('problema');
 Route::post('/problema/criar', [ProblemasController::class, 'store'])->name('problema.criar');
 
+// Route::get('/problema/concluir/{id}', 'ProblemasController@concluir');
+
 require __DIR__.'/auth.php';
