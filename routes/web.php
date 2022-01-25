@@ -34,4 +34,7 @@ Route::post('/problema/criar', [ProblemasController::class, 'store'])->name('pro
 
 // Route::get('/problema/concluir/{id}', 'ProblemasController@concluir');
 
+Route::get('/problema/concluir/{id}', [ProblemasController::class, 'updateConcluir']);
+Route::post('/', [ProblemasController::class, 'concluir']);
+
 require __DIR__.'/auth.php';
