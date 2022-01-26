@@ -31,10 +31,6 @@ Route::get('/', [ProblemasController::class, 'index'])->name('feed');
 Route::get('/problemaDetalhes/{id}',  [ProblemasController::class, 'show'])->name('problema.detalhes');
 Route::get('/problema', [ProblemasController::class, 'create'])->name('problema');
 Route::post('/problema/criar', [ProblemasController::class, 'store'])->name('problema.criar');
-
-// Route::get('/problema/concluir/{id}', 'ProblemasController@concluir');
-
-Route::get('/problema/concluir/{id}', [ProblemasController::class, 'updateConcluir']);
-Route::post('/', [ProblemasController::class, 'concluir']);
+Route::get('/problema/concluir/{id}', [ProblemasController::class, 'concluir']);
 
 require __DIR__.'/auth.php';

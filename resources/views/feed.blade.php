@@ -82,6 +82,7 @@
                      <div id="concluido"><button class="btn btn-concluido" ><a href="{{ url('/problema/concluir/' . $problema->id) }}">Marcar Concluido</a></button></div>
                       <p class="text-muted"><small>{{ $problema->data }} - {{ $problema->endereco }}</small></p>
                     </div>
+
                   </div>
                   <div class="post-content">
                     <h3>{{ $problema->titulo }}</h3>

@@ -35,15 +35,30 @@ class ProblemasController extends Controller {
         return redirect()->route('feed', []);
     }
 
-    public function updateConcluir ($id) {
-        $problema = Problema::find ($id);
+    // public function getProblemaId ($id) {
+    //     $problema = Problema::find ($id);
         
-        return view('feed');
+    //     return view('feed');
+    // }
+
+    // public function concluir ($id) {
+    //     $problema = Problema::find($id);
+    //     $problema->concluido = 1;
+    //     $problema->save();
+        
+    //     // $problema = Problema::update($concluido == 1);
+
+    //     return redirect()->route('feed');
+    // }
+
+public function concluir ($id) {
+        $problema = Problema::find($id);
+        $problema->concluido = 1;
+        $problema->save();
+        
+        // $problema = Problema::update($concluido == 1);
+
+        return redirect()->route('feed');
     }
 
-    public function concluir () {
-        $problema = Problema::update($concluido == 1);
-
-        return redirect()->route('feed', []);
-    }
 }
