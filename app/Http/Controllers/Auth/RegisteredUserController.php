@@ -9,7 +9,6 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules;
 
 class RegisteredUserController extends Controller
 {
@@ -34,25 +33,23 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nome' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'senha' => ['required', 'confirmed', Rules\Password::defaults()],
-            'data' => ['required', 'string', 'max:255'],
-            'telefone' => ['required', 'string', 'max:255'],
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|confirmed|min:8',
+            'birth_date' => 'required|string|max:255',
+            'phone' => 'required|string|max:255',
         ]);
 
-        $user = User::create([
-            'nome' => $request->nome,
+        Auth::login($user = User::create([
+            'name' => $request->name,
             'email' => $request->email,
-            'senha' => Hash::make($request->senha),
-            'data' => $request->data,
-            'telefone' => $request->telefone,
-        ]);
+            'password' => Hash::make($request->password),
+            'birth_date' => $request->birth_date,
+            'phone' => $request->phone,
+        ]));
 
         event(new Registered($user));
 
-        Auth::login($user);
-
-        return redirect(RouteServiceProvider::HOME);
+        return redirect()->route('feed');
     }
 }

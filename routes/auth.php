@@ -19,14 +19,14 @@ Route::get('/cadastro', [RegisteredUserController::class, 'create'])
                 ->middleware('guest')
                 ->name('cadastro');
 
-Route::post('/cadastro', [RegisteredUserController::class, 'store'])
+Route::post('/cadastro/load', [RegisteredUserController::class, 'store'])
                 ->middleware('guest');
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])
                 ->middleware('guest')
                 ->name('login');
 
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])
+Route::post('/login/load', [AuthenticatedSessionController::class, 'store'])
                 ->middleware('guest');
 
 Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])

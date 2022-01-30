@@ -19,7 +19,7 @@
         <h1>ProSolve</h1>
       </div>
       <div class="login-box">
-        <form class="login-form" action="{{ url('/login') }}" method="POST">
+        <form class="login-form" action="{{ url('/login/load') }}" method="POST">
           @csrf
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Login</h3>
           <div class="form-group">
@@ -28,7 +28,7 @@
           </div>
           <div class="form-group">
             <label class="control-label">Senha</label>
-            <input class="form-control" id="senha" name="senha" type="password" placeholder="Senha">
+            <input class="form-control" id="password" name="password" type="password" placeholder="Senha">
           </div>
           <div class="form-group btn-container">
             <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Entrar</button>

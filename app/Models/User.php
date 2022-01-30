@@ -13,19 +13,19 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     protected $fillable = [
-        'nome',
+        'name',
         'email',
-        'senha',
-        'telefone',
-        'data_nascimento',
+        'password',
+        'phone',
+        'birth_date',
     ];
 
     protected $hidden = [
-        'senha',
+        'password',
         'remember_token',
     ];
 
     protected $casts = [
-        'email_verificado_em' => 'datetime',
+        'email_verified_at' => 'datetime',
     ];
 }

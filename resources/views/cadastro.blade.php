@@ -20,12 +20,12 @@
         <h1>ProSolve</h1>
       </div>
       <div class="login-box cadastro-box">
-        <form class="login-form" action="{{ url('/cadastro') }}" method="POST" >
+        <form class="login-form" action="{{ url('/cadastro/load') }}" method="POST" >
           @csrf
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>CADASTRO</h3>
           <div class="form-group">
             <label class="control-label">Nome</label>
-            <input class="form-control" id="nome" name="nome" type="text" placeholder="Nome" autofocus>
+            <input class="form-control" id="name" name="name" type="text" placeholder="Nome" autofocus>
           </div>
             <div class="form-group">
             <label class="control-label">Email</label>
@@ -33,15 +33,15 @@
           </div>
           <div class="form-group">
             <label class="control-label">Senha</label>
-            <input class="form-control" id="senha" name="senha" type="password" placeholder="Senha">
+            <input class="form-control" id="password" name="password" type="password" placeholder="Senha">
           </div>
           <div class="form-group">
             <label class="control-label">Data de Nascimento</label>
-            <input class="form-control" id="data" name="data" type="date" placeholder="Data">
+            <input class="form-control" id="birth_date" name="birth_date" type="date" placeholder="Data">
           </div>
             <div class="form-group">
             <label class="control-label">Telefone</label>
-            <input class="form-control" id="tefelone" name="telefone" type="text" placeholder="Telefone">
+            <input class="form-control" id="phone" name="phone" type="text" placeholder="Telefone">
           </div>
            <div class="form-group btn-container">
             <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Criar</button>
