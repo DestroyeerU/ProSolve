@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Problema;
 
-class UsuariosController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,6 +28,11 @@ class UsuariosController extends Controller
         return view('cadastro');
     }
 
+    public function create1() {
+
+        return view('login');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -34,17 +41,25 @@ class UsuariosController extends Controller
      */
     public function store(Request $request, User $user) {
 
-        /* $user->nome = $request->nome;
+        $user->name = $request->name;
         $user->email = $request->email;
-        $user->senha = $request->senha;
-        $user->telefone = $request->telefone;
-        $user->data_nascimento = $request->data_nascimento;
+        $user->password = $request->password;
+        $user->phone = $request->phone;
+        $user->birth_date = $request->birth_date;
 
-        $user->save(); */
+        $user->save();
 
-        $problema = Problema::create($request->all());
+        return redirect()->route('login');
+    }
 
-        return redirect()->route('feed');
+
+    public function authenticate(Request $request) {
+
+        if(User::attempt(['email' => $email, 'password' => $password])){
+            dd("Logou");
+        }else{
+            dd("Não Logou");
+        }
     }
 
     /**
