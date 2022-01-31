@@ -32,7 +32,7 @@ class ProblemasController extends Controller {
         );
         $notificacao = Notificacao::create($notificacao_data);
 
-        return redirect()->route('feed', []);
+        return redirect()->route('feed');
     }
 
     // public function getProblemaId ($id) {
@@ -62,3 +62,8 @@ public function concluir ($id) {
     }
 
 }
+
+
+// , ['<script>
+//         window.alert("Você tem uma nova notificação.");
+//       </script>']

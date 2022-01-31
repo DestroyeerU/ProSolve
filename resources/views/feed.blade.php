@@ -75,24 +75,26 @@
         <div class="Logout">
           <div class="tab-content">
               @foreach  ( $problemas as $problema )
-                <div class="timeline-post">
-                  <div class="post-media">
-                    <div class="content">
-                      <h5>Usuário Teste</h5>
-                     <div id="concluido"><button class="btn btn-concluido" ><a href="{{ url('/problema/concluir/' . $problema->id) }}">Marcar Concluido</a></button></div>
-                      <p class="text-muted"><small>{{ $problema->data }} - {{ $problema->endereco }}</small></p>
+                @if($problema->concluido == 0)
+                  <div class="timeline-post">
+                    <div class="post-media">
+                      <div class="content">
+                        <h5>Usuário Teste</h5>
+                      <div id="concluido"><a href="{{ url('/problema/concluir/' . $problema->id) }}"><button class="btn btn-concluido" >Marcar Concluido</button></a></div>
+                        <p class="text-muted"><small>{{ $problema->data }} - {{ $problema->endereco }}</small></p>
+                      </div>
+
                     </div>
+                    <div class="post-content">
+                      <h3>{{ $problema->titulo }}</h3>
+                      <p>{{ $problema->descricao }}</p>
 
+                      <!-- <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
+                      <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
+                      <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/> -->
+                    </div>
                   </div>
-                  <div class="post-content">
-                    <h3>{{ $problema->titulo }}</h3>
-                    <p>{{ $problema->descricao }}</p>
-
-                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
-                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
-                    <img src="https://pm1.narvii.com/6759/bcd6c5c19f07cd76b023bd0716f3e4f88887c0f9v2_128.jpg"/>
-                  </div>
-                </div>
+                @endif
               @endforeach
           </div>
         </div>
